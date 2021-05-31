@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { Link as LinkS } from 'react-scroll';
 
@@ -33,12 +33,6 @@ import Fabio from '../../assets/images/Fabio.jpg';
 import './styles.css';
 
 function Laai() {
-    const [isOpened, setIsOpened] = useState(false);
-
-    const toggle = () => {
-        setIsOpened(!isOpened);
-    }
-
     return (
         <>
             <nav className="navBar">
@@ -80,19 +74,28 @@ function Laai() {
                     <div className="heroOne">
                         <h1 className="heroTitle">LAAI</h1>
                         <p className="heroTop">LIGA ACADÊMICA DE ALERGOLOGIA E IMUNOLOGIA - UFPI</p>
-                        <p className="heroDescription">Imunologia aplicada à clínica em busca da construção e da disseminação de conhecimento!</p>
+                        <p className="heroDescription">Confira nossas atividades e descubra um pouco mais sobre a LAAI</p>
+
+                        <div className="buttonsWpr">
+                            <a href="https://www.instagram.com/laaiufpi/" target="blank" className="buttonWprThree">
+                                <p className="CTAButton">Certificados de Cursos</p>
+                            </a>
+                            <a href="https://www.instagram.com/laaiufpi/" target="blank" className="buttonWprFour">
+                                <p className="CTAButton">Processo Seletivo</p>
+                            </a>
+                        </div>
                     </div>
 
                     <div className="heroTwo">
-                        <img src={heroSvg} className="heroSvg" />
+                        <img alt="LaaiImage" src={heroSvg} className="heroSvg" />
                     </div>
 
                     <LinkS  to="sectionOne" className="buttonWpr"
                         smooth={true} duration={500} spy={true} offset={-60}
                     >
-                        <img className="buttonIcon" src={arrowBellowTwo}/>
+                        <img alt="LaaiImage" className="buttonIcon" src={arrowBellowTwo}/>
                         <p className="buttonText">Novidades LAAI</p>
-                        <img className="buttonIcon" src={arrowBellowTwo}/>
+                        <img alt="LaaiImage" className="buttonIcon" src={arrowBellowTwo}/>
                     </LinkS>
                 </div>
             </div>
@@ -101,7 +104,7 @@ function Laai() {
             <div className="sectionOne" id="sectionOne">
                 <div className="sectionOneContainer">
                     <div className="heroTwo">
-                        <img src={sectionOneSvg} className="heroSvg" />
+                        <img alt="LaaiImage" src={sectionOneSvg} className="heroSvg" />
                     </div>
 
                     <div className="sectionGroup">
@@ -117,9 +120,9 @@ function Laai() {
                     <LinkS  to="sectionProj" className="buttonWprFive"
                         smooth={true} duration={500} spy={true} offset={-60}
                     >
-                        <img className="buttonIcon" src={arrowBellow}/>
+                        <img alt="LaaiImage" className="buttonIcon" src={arrowBellow}/>
                         <p className="buttonText">Projetos LAAI</p>
-                        <img className="buttonIcon" src={arrowBellow}/>
+                        <img alt="LaaiImage" className="buttonIcon" src={arrowBellow}/>
                     </LinkS>
                 </div>
             </div>
@@ -136,7 +139,7 @@ function Laai() {
 
                     <div className="boxGroup">
                         <div className="boxUnit">
-                            <img className="boxIcon" src={book}/>
+                            <img alt="LaaiImage" className="boxIcon" src={book}/>
                             <div>
                             <p className="boxName">Capítulo de Livro</p>
                             <p className="boxStatus">Citomegalovírus e Lúpus Eritematoso Sistêmico Juvenil</p>
@@ -148,7 +151,7 @@ function Laai() {
                         </div>
 
                         <div className="boxUnit">
-                            <img className="boxIcon" src={bookopen}/>
+                            <img alt="LaaiImage" className="boxIcon" src={bookopen}/>
                             <div>
                             <p className="boxName">Livreto: Febre Reumática</p>
                             <p className="boxStatus">Em fase final. Quase lá...</p>
@@ -156,7 +159,7 @@ function Laai() {
                         </div>
 
                         <div className="boxUnit">
-                            <img className="boxIcon" src={video}/>
+                            <img alt="LaaiImage" className="boxIcon" src={video}/>
                             <div>
                             <p className="boxName">Curso Imunologia Aplicada à Clínica</p>
                             <p className="boxStatus">Previsão: Junho de 2021</p>
@@ -167,9 +170,9 @@ function Laai() {
                     <LinkS  to="sectionTwo" className="buttonWpr"
                         smooth={true} duration={500} spy={true} offset={-60}
                     >
-                        <img className="buttonIcon" src={arrowBellowTwo}/>
+                        <img alt="LaaiImage" className="buttonIcon" src={arrowBellowTwo}/>
                         <p className="buttonText">Equipe LAAI</p>
-                        <img className="buttonIcon" src={arrowBellowTwo}/>
+                        <img alt="LaaiImage" className="buttonIcon" src={arrowBellowTwo}/>
                     </LinkS>
                 </div>
             </div>
@@ -183,13 +186,13 @@ function Laai() {
 
                     <div className="teacherGroup">
                         <div className="teacherUnit">
-                            <img src={Catarina} className="teacherPic" />
+                            <img alt="LaaiImage" src={Catarina} className="teacherPic" />
                             <strong className="teacherName">Dra Catarina F. Pires</strong>
                             <p className="teacherFunction">Orientadora</p>
                         </div>
 
                         <div className="teacherUnit">
-                            <img src={Simone} className="teacherPic" />
+                            <img alt="LaaiImage" src={Simone} className="teacherPic" />
                             <strong className="teacherName">Dra Simone S. Lima</strong>
                             <p className="teacherFunction">Orientadora</p>
                         </div>
@@ -199,49 +202,49 @@ function Laai() {
 
                     <div className="directorGroup">
                         <div className="directorUnit">
-                            <img src={Igor} className="directorPic" />
+                            <img alt="LaaiImage" src={Igor} className="directorPic" />
                             <strong className="directorName">Igor</strong>
                             <p className="directorFunction">Presidente</p>
                         </div>
 
                         <div className="directorUnit">
-                            <img src={Felipe} className="directorPic" />
+                            <img alt="LaaiImage" src={Felipe} className="directorPic" />
                             <strong className="directorName">Amâncio</strong>
                             <p className="directorFunction">Vice-Presidente</p>
                         </div>
 
                         <div className="directorUnit">
-                            <img src={Fabio} className="directorPic" />
+                            <img alt="LaaiImage" src={Fabio} className="directorPic" />
                             <strong className="directorName">Fábio</strong>
                             <p className="directorFunction">Pesquisa</p>
                         </div>
 
                         <div className="directorUnit">
-                            <img src={Ana} className="directorPic" />
+                            <img alt="LaaiImage" src={Ana} className="directorPic" />
                             <strong className="directorName">Ana Flávia</strong>
                             <p className="directorFunction">Secretaria</p>
                         </div>
 
                         <div className="directorUnit">
-                            <img src={kassia} className="directorPic" />
+                            <img alt="LaaiImage" src={kassia} className="directorPic" />
                             <strong className="directorName">Kássia</strong>
                             <p className="directorFunction">Marketing</p>
                         </div>
 
                         <div className="directorUnit">
-                            <img src={Carlos} className="directorPic" />
+                            <img alt="LaaiImage" src={Carlos} className="directorPic" />
                             <strong className="directorName">Carlos</strong>
                             <p className="directorFunction">Ensino</p>
                         </div>
 
                         <div className="directorUnit">
-                            <img src={MariaLuísa} className="directorPic" />
+                            <img alt="LaaiImage" src={MariaLuísa} className="directorPic" />
                             <strong className="directorName">Maria Luísa</strong>
                             <p className="directorFunction">Extensão</p>
                         </div>
 
                         <div className="directorUnit">
-                            <img src={Felipe} className="directorPic" />
+                            <img alt="LaaiImage" src={Felipe} className="directorPic" />
                             <strong className="directorName">Rayssa</strong>
                             <p className="directorFunction">Administrativo</p>
                         </div>
@@ -251,52 +254,52 @@ function Laai() {
 
                     <div className="studentGroup">
                         <div className="studentUnit">
-                            <img src={anna} className="studentPic" />
+                            <img alt="LaaiImage" src={anna} className="studentPic" />
                             <strong className="studentName">Anna Paulla Barbosa</strong>
                         </div>
 
                         <div className="studentUnit">
-                            <img src={Davi} className="studentPic" />
+                            <img alt="LaaiImage" src={Davi} className="studentPic" />
                             <strong className="studentName">Davi Kennedy</strong>
                         </div>
 
                         <div className="studentUnit">
-                            <img src={Felipe} className="studentPic" />
+                            <img alt="LaaiImage" src={Felipe} className="studentPic" />
                             <strong className="studentName">Felipe Dantas</strong>
                         </div>
 
                         <div className="studentUnit">
-                            <img src={Felipe} className="studentPic" />
+                            <img alt="LaaiImage" src={Felipe} className="studentPic" />
                             <strong className="studentName">Franciele Machado</strong>
                         </div>
 
                         <div className="studentUnit">
-                            <img src={matheus} className="studentPic" />
+                            <img alt="LaaiImage" src={matheus} className="studentPic" />
                             <strong className="studentName">Francisco Matheus</strong>
                         </div>
 
                         <div className="studentUnit">
-                            <img src={iury} className="studentPic" />
+                            <img alt="LaaiImage" src={iury} className="studentPic" />
                             <strong className="studentName">Iury Lorenzo</strong>
                         </div>
 
                         <div className="studentUnit">
-                            <img src={Lari} className="studentPic" />
+                            <img alt="LaaiImage" src={Lari} className="studentPic" />
                             <strong className="studentName">Larissa Vasconcelos</strong>
                         </div>
 
                         <div className="studentUnit">
-                            <img src={Leticia} className="studentPic" />
+                            <img alt="LaaiImage" src={Leticia} className="studentPic" />
                             <strong className="studentName">Letícia Oliveira</strong>
                         </div>
 
                         <div className="studentUnit">
-                            <img src={luciana} className="studentPic" />
+                            <img alt="LaaiImage" src={luciana} className="studentPic" />
                             <strong className="studentName">Luciana Brito</strong>
                         </div>
 
                         <div className="studentUnit">
-                            <img src={Ykaro} className="studentPic" />
+                            <img alt="LaaiImage" src={Ykaro} className="studentPic" />
                             <strong className="studentName">Ykaro Ysmael</strong>
                         </div>
                     </div>
@@ -304,9 +307,9 @@ function Laai() {
                     <LinkS  to="sectionThree" className="buttonWprFive"
                         smooth={true} duration={500} spy={true} offset={-60}
                     >
-                        <img className="buttonIcon" src={arrowBellow}/>
+                        <img alt="LaaiImage" className="buttonIcon" src={arrowBellow}/>
                         <p className="buttonText">Contato LAAI</p>
-                        <img className="buttonIcon" src={arrowBellow}/>
+                        <img alt="LaaiImage" className="buttonIcon" src={arrowBellow}/>
                     </LinkS>
                 </div>
             </div>
@@ -315,12 +318,13 @@ function Laai() {
             <div className="sectionThree" id="sectionThree">
                 <div className="sectionThreeContainer">
                     <div className="heroTwo">
-                        <img src={contact} className="heroSvg" />
+                        <img alt="LaaiImage" src={contact} className="heroSvg" />
                     </div>
 
                     <div className="sectionGroup">
                         <h1 className="sectionTitleThree">ENTRE EM CONTATO</h1>
-                        <p className="sectionDescriptionTwo">Estamos preparados para tirar todas as suas dúvidas sobre nossa liga! Entre em contato conosco e deixe suas sugestões, dicas e comentários.</p>
+                        <p className="sectionDescriptionTwo">Estamos preparados para tirar todas as suas dúvidas sobre nossa liga!</p>
+                        <p className="sectionDescriptionTwo">Entre em contato conosco e deixe suas sugestões, dicas e comentários.</p>
                         <div className="buttonsWpr">
                             <a href="https://www.instagram.com/laaiufpi/" target="blank" className="buttonWprThree">
                                 <p className="CTAButton">Instagram - @laaiufpi</p>
