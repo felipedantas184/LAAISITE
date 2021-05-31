@@ -54,6 +54,9 @@
     height: 720px;
     width: 100%;
     background: #812CC2;
+    background-image: url(./../../assets/images/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .heroSectionContainer {
@@ -208,6 +211,9 @@
     height: 750px;
     width: 100%;
     background: #812CC2;
+    background-image: url(./../../assets/images/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .sectionProjContainer {
@@ -307,6 +313,10 @@
     height: 750px;
     width: 100%;
     background: #f4f4f4;
+    background-image: url(./../../assets/images/Background\ \(11\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .sectionTwoContainer {
@@ -447,6 +457,10 @@
     height: 600px;
     width: 100%;
     background: #812CC2;
+    background-image: url(./../../assets/images/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .sectionThreeContainer {

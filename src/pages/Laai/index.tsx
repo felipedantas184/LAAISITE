@@ -370,7 +370,7 @@ function Laai() {
                     </div>
 
                     <div className="footerTwo">
-                        <p>LAAI UFPI © 2021 - Felipe Dantas.</p>
+                        <p>LAAI UFPI © 2021 - Felipe Dantas</p>
                     </div>
                 </div>
             </div>
