@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Link as LinkS } from 'react-scroll';
 
@@ -34,9 +34,23 @@ import Fabio from '../../assets/images/Fabio.jpg';
 import './styles.css';
 
 function Laai() {
+    const [scrollNav, setScrollNav] = useState(false)
+    const changeNav = () => {
+        if(window.scrollY >= 60) {
+        setScrollNav(true)
+        } else {
+        setScrollNav(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav)
+    }, [])
+
+
     return (
         <>
-            <nav className="navBar">
+            <nav className="navBar" style={{background: scrollNav ? '#6E0B9C' : 'transparent'}}>
                 <ul className="navBarContainer">
                         <li className="navBarItem">
                             <LinkS  to="sectionOne" className="navLink"
@@ -111,7 +125,7 @@ function Laai() {
                     <div className="sectionGroup">
                         <p className="sectionTop">EM BREVE: SEGUNDA EDIÇÃO</p>
                         <h1 className="sectionTitle">CURSO IMUNOLOGIA APLICADA À CLÍNICA</h1>
-                        <p className="sectionDescription">A primeira edição do curso Imunologia Aplicada à Clínica foi um sucesso! Por isso, já estamos organizando a segunda edição desse curso incrível!</p>
+                        <p className="sectionDescription">A primeira edição do foi um sucesso! Por isso, já estamos organizando a segunda edição desse curso incrível!</p>
                         <p className="sectionDescription">Siga-nos no Instagram e seja avisado quando as vagas abrirem!</p>
                         <a href="https://www.instagram.com/laaiufpi/" target="blank" className="buttonWprTwo">
                             <p className="CTAButton">Ver @laaiufpi</p>

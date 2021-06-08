@@ -12,9 +12,10 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background: #6E0B9C;
+    background: transparent;
     height: 60px;
     z-index: 10;
+    transition: all 0.5s ease-in-out;
 }
 
 .navBarContainer {
@@ -51,7 +52,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 720px;
+    height: 840px;
+    margin-top: -60px;
     width: 100%;
     background: #812CC2;
     background-image: url(./../../assets/images/Background.png);
@@ -144,7 +146,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 750px;
+    height: 780px;
     width: 100%;
     background: #fff;
 }
@@ -208,12 +210,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 750px;
+    height: 780px;
     width: 100%;
     background: #812CC2;
     background-image: url(./../../assets/images/Background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
 }
 
 .sectionProjContainer {
@@ -260,8 +263,8 @@
     justify-content: space-between;
     align-items: flex-start;
     background: blueviolet;
-    max-width: 150px;
-    max-height: 150px;
+    width: 150px;
+    height: 150px;
     border-radius: 20px;
     padding: 12px;
     box-shadow: rgba(37, 38, 39, 0.4) 1px 1px 1px 0px, rgba(34, 30, 30, 0.3) -6px -2px 16px 0px;
@@ -312,7 +315,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 750px;
+    height: 780px;
     width: 100%;
     background: #f4f4f4;
     background-image: url(./../../assets/images/Background\ \(11\).png);
@@ -462,7 +465,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 720px;
     width: 100%;
     background: #812CC2;
     background-image: url(./../../assets/images/Background.png);
@@ -472,10 +475,10 @@
 
 .sectionThreeContainer {
     display: flex;
-    height: 480px;
+    height: 600px;
     width: 400px;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0 24px;
 }
 
@@ -615,27 +618,27 @@
 
     .heroOne {
         max-width: 400px;
-        margin-top: -100px;
+        margin-top: -200px;
     }
 
     .sectionOne .buttonWprFive {
         position: absolute;
-        top: 1400px;
+        top: 1480px;
     }
 
     .sectionTwo .buttonWprFive {
         position: absolute;
-        top: 2900px;
+        top: 3040px;
     }
 
     .sectionProj .buttonWpr {
         position: absolute;
-        top: 2150px;
+        top: 2260px;
     }
 
     .heroSection .buttonWpr {
         position: absolute;
-        top: 650px;
+        top: 700px;
     }
 
     .heroSvg {
@@ -657,7 +660,15 @@
 
     .sectionTwoTitle {
         position: absolute;
-        top: 2370px;
+        top: 2500px;
+    }
+
+    .sectionThreeContainer .sectionTitleThree {
+        font-size: 40px;
+    }
+
+    .sectionThreeContainer .sectionDescriptionTwo {
+        max-width: 425px;
     }
 
     .teamSVG {
@@ -701,7 +712,8 @@
 
     .footerTwo {
         position: absolute;
-        top: 3800px;
+        top: 4070px;
+        width: 75%;
     }
     
 
