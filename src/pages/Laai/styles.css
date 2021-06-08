@@ -664,7 +664,7 @@
         width: 250px;
         display: block;
         align-self: center;
-        justify-self: flex-start;
+        margin-top: auto;
     }
 
     .teacherUnit {
