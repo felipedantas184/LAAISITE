@@ -700,7 +700,29 @@
     }
 
     .footerTwo {
-        display: none;
+        position: absolute;
+        top: 3800px;
     }
     
+
+    /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #6e0b9ca8;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #812cc2;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6E0B9C;
+  }
 } 
