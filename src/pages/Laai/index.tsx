@@ -3,6 +3,7 @@ import React from 'react';
 import { Link as LinkS } from 'react-scroll';
 
 import heroSvg from '../../assets/images/heroSvgTwo.svg';
+import teamSvg from '../../assets/images/GroupSvg1.svg';
 import sectionOneSvg from '../../assets/images/news.svg';
 import contact from '../../assets/images/contactSvg.svg';
 import arrowBellow from '../../assets/images/arrowBellow.svg';
@@ -180,8 +181,10 @@ function Laai() {
 
             <div className="sectionTwo" id="sectionTwo">
                 <div className="sectionTwoContainer">
-                    <h1 className="sectionTwoTitle">Nosso Time</h1>
+                    <h1 className="sectionTwoTitle">NOSSO TIME</h1>
 
+                    <div className="orientDirec">
+                    <div>
                     <p className="squadTitle">Orientadoras</p>
 
                     <div className="teacherGroup">
@@ -197,7 +200,9 @@ function Laai() {
                             <p className="teacherFunction">Orientadora</p>
                         </div>
                     </div>
+                    </div>
 
+                    <div>
                     <p className="squadTitle">Diretoria</p>
 
                     <div className="directorGroup">
@@ -210,7 +215,7 @@ function Laai() {
                         <div className="directorUnit">
                             <img alt="LaaiImage" src={Felipe} className="directorPic" />
                             <strong className="directorName">Amâncio</strong>
-                            <p className="directorFunction">Vice-Presidente</p>
+                            <p className="directorFunction" style={{fontSize: 9}}>Vice-Presidente</p>
                         </div>
 
                         <div className="directorUnit">
@@ -249,7 +254,10 @@ function Laai() {
                             <p className="directorFunction">Administrativo</p>
                         </div>
                     </div>
+                    </div>
+                    </div>
                     
+                    <div className="orientDirec" >
                     <p className="squadTitle">Ligantes</p>
 
                     <div className="studentGroup">
@@ -302,6 +310,8 @@ function Laai() {
                             <img alt="LaaiImage" src={Ykaro} className="studentPic" />
                             <strong className="studentName">Ykaro Ysmael</strong>
                         </div>
+                    </div>
+                    <img src={teamSvg} alt="team svg" className="teamSVG"/>
                     </div>
 
                     <LinkS  to="sectionThree" className="buttonWprFive"
